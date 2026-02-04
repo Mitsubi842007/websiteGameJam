@@ -110,8 +110,8 @@ main {
 }
 
 /* Show active slide */
-#slide1:checked~.slide1,
-#slide2:checked~.slide2 {
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2 {
     opacity: 1;
     pointer-events: auto;
 }
@@ -186,8 +186,8 @@ main {
 }
 
 /* Active dot styling */
-#slide1:checked~.hero-navigation label:nth-child(1),
-#slide2:checked~.hero-navigation label:nth-child(2) {
+#slide1:checked ~ .hero-navigation label:nth-child(1),
+#slide2:checked ~ .hero-navigation label:nth-child(2) {
     background-color: #ffffff;
     transform: scale(1.3);
 }
