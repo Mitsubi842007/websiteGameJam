@@ -81,3 +81,81 @@ nav {
 main {
     flex: 1;
 }
+
+/* Hero Section (Home Page) - Carousel */
+.hero {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+/* Hide radio buttons */
+.slide-input {
+    display: none;
+}
+
+/* Hero Slides */
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+/* Show active slide */
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2 {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
