@@ -111,8 +111,8 @@ main {
 }
 
 /* Toon actieve slide (wordt bestuurd door JavaScript via radio buttons) */
-#slide1:checked ~ .slide1,
-#slide2:checked ~ .slide2 {
+#slide1:checked~.slide1,
+#slide2:checked~.slide2 {
     opacity: 1;
 }
 
