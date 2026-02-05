@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'pixelify sans';
     background-color: #1a1a1a;
     color: #ffffff;
     line-height: 1.6;
@@ -24,7 +24,6 @@ section {
 header {
     background-color: rgba(26, 26, 26, 0.7);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     padding: 1rem 3rem;
     position: sticky;
     top: 0;
@@ -133,7 +132,6 @@ main {
 #slide1:checked~.slide1,
 #slide2:checked~.slide2 {
     opacity: 1 !important;
-    pointer-events: auto;
     animation: none;
 }
 
@@ -147,12 +145,10 @@ main {
 
 #slide1:checked~.slide1 {
     opacity: 1;
-    pointer-events: auto;
 }
 
 #slide2:checked~.slide2 {
     opacity: 1;
-    pointer-events: auto;
 }
 
 .hero-background {
@@ -484,10 +480,11 @@ main {
     font-size: 1rem;
 }
 
-/* Footer */
+/* Footer for the website.*/
 footer {
     background-color: #0a0a0a;
     padding: 4rem 3rem 2rem;
+    font-family: 'roboto mono';
 }
 
 .footer-content {
