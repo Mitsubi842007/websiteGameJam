@@ -114,7 +114,6 @@ main {
 #slide1:checked ~ .slide1,
 #slide2:checked ~ .slide2 {
     opacity: 1;
-    pointer-events: auto;
 }
 
 .hero-background {
