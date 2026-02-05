@@ -106,49 +106,15 @@ main {
     align-items: center;
     justify-content: center;
     opacity: 0;
+    transition: opacity 1s ease-in-out;
     pointer-events: none;
-    animation: slideAnimation 10s infinite;
 }
 
-/* Animatie voor automatisch wisselen */
-@keyframes slideAnimation {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    45% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-/* Elke slide start op een ander moment */
-.slide1 {
-    animation-delay: 0s;
-}
-
-.slide2 {
-    animation-delay: 5s;
-}
-
-/* Handmatige bediening blijft werken */
-#slide1:checked~.slide1,
-#slide2:checked~.slide2 {
-    opacity: 1 !important;
-    animation: none;
-}
-
-/* Stop automatische animatie als gebruiker handmatig kiest */
-#slide1:checked~.slide1,
-#slide1:checked~.slide2,
-#slide2:checked~.slide1,
-#slide2:checked~.slide2 {
-    animation: none;
-}
-
-#slide1:checked~.slide1 {
+/* Toon actieve slide (wordt bestuurd door JavaScript via radio buttons) */
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2 {
     opacity: 1;
-}
-
-#slide2:checked~.slide2 {
-    opacity: 1;
+    pointer-events: auto;
 }
 
 .hero-background {
