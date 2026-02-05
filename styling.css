@@ -22,13 +22,15 @@ section {
 
 /* Header & Navigation */
 header {
-    background-color: #595151;
+    background-color: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 1rem 3rem;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #d0d0d0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(157, 78, 221, 0.2);
 }
 
 nav {
@@ -55,7 +57,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #2a2a2a;
+    color: #9c9696;
 }
 
 .nav-menu {
@@ -65,7 +67,7 @@ nav {
 }
 
 .nav-menu a {
-    color: #000000;
+    color: #9c9696;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
