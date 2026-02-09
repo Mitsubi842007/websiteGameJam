@@ -83,3 +83,5 @@ document.addEventListener('visibilitychange', () => {
         startAutoSlide();
     }
 });
+
+// workspace team van de spel.
