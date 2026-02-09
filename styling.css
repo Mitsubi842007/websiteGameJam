@@ -407,6 +407,7 @@ main {
 .character-image {
     width: 100%;
     max-width: 400px;
+    height: 400px;
     margin: 0 auto 1.5rem;
     border-radius: 12px;
     overflow: hidden;
@@ -419,9 +420,11 @@ main {
 
 .character-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     border-radius: 12px;
+    object-fit: contain;
+    object-position: center;
 }
 
 .character-name {
