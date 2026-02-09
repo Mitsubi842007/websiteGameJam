@@ -84,4 +84,4 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-// workspace team van de spel.
+// workspace team images van de spel.
